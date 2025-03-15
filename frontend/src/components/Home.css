@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background: #0a0a1a;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.home-container {
+  min-height: 100%;
+  color: black;
+}
+
+.primary-button {
+  background: linear-gradient(135deg, #a855f7, #7027c3);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.primary-button:hover {
+  opacity: 0.9;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background: linear-gradient(135deg, #9e85ef, #4f2871);
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero h1 {
+  font-size: 38px;
+  color: #2b0839;
+}
+
+.hero span {
+  color: #4e0707;
+}
+
+.hero p {
+  font-size: 18px;
+  margin: 20px 0;
+  color: #400f54;
+}
+
+.hero-image img {
+  width: 350px;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 50px;
+  background: #11102b;
+}
+
+.feature h3 {
+  color: #a855f7;
+}
+
+/* About Us Section */
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background: white;
+  color: black;
+}
+
+.about-text {
+  max-width: 50%;
+}
+
+.stats {
+  display: flex;
+  gap: 50px;
+  margin: 20px 0;
+}
+
+.about-image img {
+  width: 400px;
+}
+
+/* Objective Section */
+.objective {
+  text-align: center;
+  padding: 40px;
+  background: #0a0a1a;
+}
+
+.logos img {
+  width: 100px;
+  margin: 10px;
+}
+
+/* Why Choose Us Section */
+.why-choose {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background: #11102b;
+}
+
+.why-features {
+  max-width: 50%;
+}
+
+.why-feature h3 {
+  color: #e0aaff;
+}
+
+@media (max-width: 768px) {
+  .hero,
+  .about,
+  .why-choose {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content,
+  .about-text {
+    max-width: 100%;
+  }
+
+  .hero-image img,
+  .about-image img {
+    width: 100%;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+}
